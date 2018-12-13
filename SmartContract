@@ -1,0 +1,38 @@
+
+let stateField = "Key"
+
+match (tx) {
+	case t:DataTransaction =>
+        
+		let newState = getString(t.data, stateField)
+		let currentState = getString(tx.sender, stateField)
+		match (newState) {
+			case nxt:String => {
+				if(isDefined(currentState) == false) then {
+					# there is no state yet
+					nxt == "Init"
+				} else {
+					let currentStateValue = extract(currentState)
+					
+					if currentStateValue == "Init" then { 
+						false
+					} else 
+					if currentStateValue == "Fundpot" then { 
+						false
+					} else 
+					if currentStateValue == "Moderator" then { 
+						false
+					} else 
+					if currentStateValue == "Translator" then { 
+						false
+					} else 
+					if currentStateValue == "KolinPublic" then { 
+						false
+					} 
+					 else false
+				}
+			}                
+			case _ => throw("State should be a string")
+		}
+		case _ => throw("Only data transactions are allowed")
+}
