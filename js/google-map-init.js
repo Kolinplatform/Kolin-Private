@@ -1,13 +1,14 @@
 var locations = [
-      ['Head Office', 41.38506389999999, 2.1734034999999494, 'https://dl.dropboxusercontent.com/u/157053521/marker-blue.png'],
-      ['Sub Office', 41.3850519497068, 2.1846485137939453, 'https://dl.dropboxusercontent.com/u/157053521/marker-green.png'],
-      ['Local Office', 41.37487637142832, 2.1726322174072266, 'https://dl.dropboxusercontent.com/u/157053521/marker-red.png']
+      ['Head Office', 55.952063, -3.198938, ],
+      ['London', 51.517483, -0.124977, ],
+      ['Ireland', 53.341056, -6.258512,]
+	  
     ];
 
 var map = new google.maps.Map(document.getElementById('trd-map'), {
     scrollwheel: false,
     styles: [{"featureType":"administrative.neighborhood","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"visibility":"simplified"},{"hue":"#ffa900"}]}],
-        center: new google.maps.LatLng(41.38376398983456,  2.1755504608154297)
+        center: new google.maps.LatLng(55.952063,  -3.198938)
     });
 
 var infowindow = new google.maps.InfoWindow();
