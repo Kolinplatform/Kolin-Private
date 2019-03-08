@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+	<title>Kolin Platform - Betting game trial </title>
+<link rel="stylesheet" href="css/style_trial.css">
+	<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@KolinPlatform">
+<meta name="twitter:creator" content="@MillacuraFA">
+<meta name="twitter:title" content="Kolin Platform - Betting game trial">
+<meta name="twitter:description" content="This is a trial for a decentralised betting system built on Waves platform. Winners receive funds from Losers proportionally to funds sent. In case of draw funds are returned to participants. Distributed for testing purposes-only.">
+<meta name="twitter:image" content="https://kolinplatform.com/game/img/Kolin_Platform_game_trial-min.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+
+  <section class="landing">
+  <div class="landing-inner">
+    
+    <p>Betting game trial </p>
+    <h1>Play using Waves or Kolin</h1>
+	  <div class="row" style="align-content: center">
+   <div class="column">
+      <img src="img/liverpool.png" alt="LivP" width="200px" height="200px" >
+  <div>&nbsp;</div>
+	  <a class="button1" type="button" href="https://client.wavesplatform.com/#send/FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW?recipient=betforliverpool&amount=10000&referrer=https://game.kolinplatform.com/payment-success" style="width:30%">Play with <strong>Kolin</strong></a>
+	 <div id="kolinlivbalance" class="count"> Reveal Kolin Jackpot</div>
+	 <div>&nbsp;</div>
+	  <a class="button2" type="button" href="https://client.wavesplatform.com/#send/WAVES?recipient=betforliverpool&amount=1.000&referrer=https://game.kolinplatform.com/payment-success"  style="width:30%">Play with <strong>Waves</strong></a>
+	 
+	 <div id="waveslivbalance" class="count"> Reveal Waves Jackpot</div>
+	 
+  </div>
+		  <div class="column">
+    <img src="img/bayern.png" alt="BayM" width="200px" height="200px">
+  <div>&nbsp;</div>
+    
+	
+   <a class="button1" href="https://client.wavesplatform.com/#send/FiKspxSpkpzT4pMUA9ccZkbJmVXTdu4JhFDXNNXr5noW?recipient=betforbayern&amount=10000&referrer=https://game.kolinplatform.com/payment-success" style="width:30%">Play with <strong>Kolin</strong></a>
+	  
+	  <div id="kolinbaybalance" class="count"> Reveal Kolin Jackpot</div>
+  <div>&nbsp;</div>
+  
+	  <a class="button2" href="https://client.wavesplatform.com/#send/WAVES?recipient=betforbayern&amount=1.000&referrer=https://game.kolinplatform.com/payment-success" style="width:30%">Play with <strong>Waves</strong></a>
+	  <div id="wavesbaybalance" type="button2" class="count" onclick="getbalancewb()"> Reveal Waves Jackpot</div>
+	 
+  </div>
+     </div>
+	  
+	  <div class="row"> You can also send Waves or Kolin directly by writing <strong>"betforliverpool"</strong> or <strong>"betforbayern"</strong> in the address section. "Legal disclaimer: The present is a trial for a peer-to-peer game without third party intermediaries, where users organise bets on their own behalf. It was created for testing purposes-only and users acknowledge compliance to the laws of their own jurisdiction".
+  </div>
+	 
+	  
+	  </div>
+</section>
+	
+<script>window.onload = function() {
+  alert("Legal disclaimer: The present is a trial for a peer-to-peer game without third party intermediaries, where users organise bets on their own behalf. It was created for testing purposes-only and users acknowledge compliance to the laws of their own jurisdiction");
+}</script>
+
+<!––geting balances from Waves Blockchain-->
+<script src="js/game.js"></script>
+<!––interaction with WavesKeeper-->
+<script src="js/waveskeeper.js"></script>
+</body>
+</html>

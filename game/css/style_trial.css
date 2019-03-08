@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #fff;
+  background: #000;
+  
+	overflow: scroll;
+    overflow-x: hidden
+}
+
+.landing-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(00, 00, 0, 0.10);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.landing {
+  position: relative;
+  background-image:url(img/UEFA.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.landing h1 {
+  font-size: 40px;
+}
+
+.landing p {
+  font-size: 20px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: auto;
+  width: 48%vw;
+	height: 50%vh; 
+  padding: 5px;
+	
+	
+}
+
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}	
+.button1 {
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-decoration: none;
+	background-color: #d3d3d3;
+    color: #000;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button1:hover {
+	
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	background-color: #663399; /* Green */
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-decoration: none;
+	background-color: #d3d3d3;
+    color: #000;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	background-color: #0e4bef; /* Green */
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.count {
+  position: relative;
+  margin: 8px 0;
+  padding: 8px 8px;
+  font-size: 16px;
+  line-height: 8px;
+  font-weight: 20;
+	color: white;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  +border-radius: 2px;
+  display: inline-block;
+  background: rgba(0,0,0,0.4);
+   
+}
