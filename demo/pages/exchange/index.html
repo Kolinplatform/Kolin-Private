@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kolin private - Exchange </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!--<link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.ico" />
+    <!-- Default Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="../../index.html">
+          <img src="../../images/logo.svg" alt="logo"/>
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html">
+          <img src="../../images/logo-mini.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+           <li class="nav-item">
+            <a href="../../pages/schedule/index.html" class="nav-link"><i class="menu-icon mdi mdi-calendar-clock"></i>Schedule
+              <span class="badge badge-primary ml-1">New</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="../../pages/exchange/index.html" class="nav-link">
+              <i class="mdi mdi-elevation-rise"></i>Exchange
+			  <span class="badge badge-primary ml-1">New</span></a>
+          </li>
+          <!--<li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="mdi mdi-bookmark-plus-outline"></i>Evaluations
+			  <span class="badge badge-primary ml-1">New</span></a>
+          </li>-->
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-file-document-box"></i>
+              <span class="count">7</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <div class="dropdown-item">
+                <p class="mb-0 font-weight-normal float-left">You have 7 unread mails
+                </p>
+                <span class="badge badge-info badge-pill float-right">View all</span>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
+                    <span class="float-right font-weight-light small-text">1 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    New work due
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">Tim Cook
+                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    Can we work together?
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark"> Johnson
+                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    Upcoming new event
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell"></i>
+              <span class="count">4</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item">
+                <p class="mb-0 font-weight-normal float-left">You have 4 new notifications
+                </p>
+                <span class="badge badge-pill badge-danger float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Application Error</h6>
+                  <p class="font-weight-light small-text">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="mdi mdi-comment-text-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Settings</h6>
+                  <p class="font-weight-light small-text">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="mdi mdi-email-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">New work finished</h6>
+                  <p class="font-weight-light small-text">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Hello, Mauricio Estephan !</span>
+              <img class="img-xs rounded-circle" src="../../images/faces/face1.jpg" alt="Profile image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <a class="dropdown-item p-0">
+                <div class="d-flex border-bottom">
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                    <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                  </div>
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                    <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                  </div>
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                    <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item mt-2">
+                Manage Accounts
+              </a>
+              <a class="dropdown-item">
+                Change Password
+              </a>
+              <a class="dropdown-item">
+                Check Inbox
+              </a>
+              <a href="../../pages/main/login.html" class="dropdown-item">
+                Sign Out
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+           <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="../../images/faces/face1.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Mauricio Estephan</p>
+                  <div>
+                    <small class="designation text-muted">Translator</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-success btn-block" href="../../pages/postwork/index.html">Post job
+                <i class="mdi mdi-plus"></i>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="menu-icon mdi mdi-television"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-content-paste"></i>
+              <span class="menu-title">Search Jobs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/workdue/index.html"><i class="menu-icon mdi mdi-clock-alert"></i>Work Due</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/workfinished/index.html"><i class="menu-icon mdi mdi-file-check"></i>Finished</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/wallet/index.html">
+              <i class="menu-icon mdi mdi-wallet-travel"></i>
+              <span class="menu-title">Wallet<span class="badge badge-primary ml-1">New</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/exchange/index.html">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Exchange<span class="badge badge-primary ml-1">New</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/schedule/index.html">
+              <i class="menu-icon mdi mdi-table"></i>
+              <span class="menu-title">Schedule<span class="badge badge-primary ml-1">New</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/games/index.html">
+              <i class="menu-icon mdi mdi-gamepad-variant"></i>
+              <span class="menu-title">Games<span class="badge badge-primary ml-1">New</span></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-help-circle-outline"></i>
+              <span class="menu-title">Help &amp; Documentation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/main/blank-page.html"> Blank Page </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/main/login.html"> Login </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/main/register.html"> Register </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/main/error-404.html"> 404 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/main/error-500.html"> 500 </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- partial -->
+<div class="main-panel">
+		  <!-- content-wrapper starts -->
+<div class="content-wrapper">
+         <!-- Content Header (Page header) -->
+<div class="row purchace-popup">
+            <div class="col-12">
+              <span class="d-block d-md-flex align-items-center">
+                <p>This section retrieves direct information from the Blockchain and it's powered by </p>
+                <a class="btn ml-auto  d-none d-md-block" target="_blank"></a>
+                <a class="btn purchase-button mt-4 mt-md-0" target="_blank">Waves<svg height="12" width="10"><path fill="#fff" d="M8,4,4,8,0,4,4,0Z"></path></svg>keeper</a>
+                <i class="mdi mdi-close popup-dismiss d-none d-md-block"></i>
+              </span>
+            </div>
+          </div>
+    <!-- Main content -->
+<div class="row">
+           <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+					
+                    <div class="head-splits name">
+                        <h4 class="title">KOLIN<span class="primary">/BTC</span></h4>
+                        <p>KOLIN</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small primary"><strong>Last Price</strong></p>
+                        <p id="lastprice"> $0.05</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small primary"><strong>24h change</strong></p>
+                        <p class="amount"><span class="text-black">+0.00000002</span> +100%</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small primary"><strong>24h High</strong></p>
+                        <p class="amount"><span class="text-black">0.00000010</span> BTC</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small primary"><strong>24h Low</strong></p>
+                        <p class="amount"><span class="text-black">0.00000001</span> BTC</p>
+                    </div>
+                    <div class="head-splits">
+                        <p class="small primary"><strong>24h Volume</strong></p>
+                        <p class="amount"><span class="text-black">1.4287</span> BTC</p>
+                    </div>
+	</div></div></div></div>
+<!-- TradingView Widget BEGIN -->
+	<div class="row">
+           <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+<div class="tradingview-widget-container  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div id="tradingview_35f2b"></div>
+					</div></div></div></div></div>
+<!-- TradingView Widget END -->
+<!-- Order Widget BEGIN -->
+<div class="row">
+	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">                    
+		<div class="center-widget">
+ 			<ul class="nav nav-tabs" id="myTab2" role="tablist">
+            	<li class="nav-item">
+                	<a class="nav-link active" id="limit-tab" data-toggle="tab" href="#limit" role="tab" aria-controls="limit" aria-selected="true">Limit</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">Market</a>
+                 </li>
+                     <!--       <li class="nav-item">
+                                <a class="nav-link" id="stop-limit-tab" data-toggle="tab" href="#stop-limit" role="tab" aria-controls="stop-limit" aria-selected="false">Stop-Limit</a>
+                            </li> -->
+            </ul>
+		<div class="tab-content" id="myTabContent2">
+            <div class="tab-pane fade show active" id="limit" role="tabpanel" aria-labelledby="limit-tab">
+            	<div class="row">
+                	<div class="col-md-6 col-sm-6 col-xs-12" oninput="btotal.value=(bprice.value)*parseInt(bamount.value)">
+                    	<h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
+                        <div class="form-group">
+                        	<label for="">Price</label>
+                            <input type="number" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="bprice" placeholder="BTC">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Amount</label>
+                            <input type="number" class="form-control" value="100" step="1" min="100"  id="bamount" placeholder="KOLIN">
+                        </div>
+                        <div class="form-group percent-btns">
+                             <a href="#">25%</a>
+                             <a href="#">50%</a>
+                             <a href="#">75%</a>
+                             <a href="#">100%</a>
+                        </div>
+                        <div class="form-group">
+                             <label for="amount price">Total</label>
+                             <input type="text" class="form-control" min="0.00000001" step="0.00000001" id="btotal" name="total" placeholder="BTC">
+                        </div>
+                        <div class="form-group">
+                             <a class="btn btn-success" onClick="buybtckolin()">BUY</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" oninput="(stotal.value)=(sprice.value)*(samount.value)">
+                        <h6 class="title"><strong>Sell KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
+                        <div class="form-group">
+                              <label for="">Price</label>
+                              <input type="number" min="0.00000001" value="0.00000001" step="0.00000001" class="form-control" id="sprice"  placeholder="BTC">
+                        </div>
+                        <div class="form-group">
+                                            <label for="">Amount</label>
+                                            <input type="number" min="100" value="100" step="1" class="form-control" id="samount" placeholder="KOLIN">
+                        </div>
+                        <div class="form-group percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                        </div>
+                        <div class="form-group">
+                                            <label for="samount sprice">Total</label>
+                                            <input type="text" class="form-control" id="stotal" placeholder="BTC">
+                        </div>
+                        <div class="form-group">
+                                            <a class="btn btn-danger" onClick="sellbtckolin()">SELL</a>
+                        </div>
+                   </div>
+              </div>
+          </div>
+                            <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6 class="title"><strong>Buy KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
+                                        <div class="form-group">
+                                            <label for="">Price</label>
+                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Amount</label>
+                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                        </div>
+                                        <div class="form-group percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+										<div class="form-group">
+                          				   <label for="">Total</label>
+                        				   <input type="text" class="form-control" id="" placeholder="BTC">
+                       					</div>
+                                        <div class="form-group">
+                                            <a class="btn btn-success" onClick="buybtckolin()">BUY</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6 class="title"><strong>Sell KOLIN</strong><!--<span class="pull-right">&nbsp; BTC: 3.87062</span>--></h6>
+                                        <div class="form-group">
+                                            <label for="">Price</label>
+                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Amount</label>
+                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                        </div>
+                                        <div class="form-group percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+										<div class="form-group">
+                            			 	<label for="">Total</label>
+                            				<input type="text" class="form-control" id="" placeholder="BTC">
+                       					</div>
+                                        <div class="form-group">
+                                            <a class="btn btn-danger" onClick="sellbtckolin()">SELL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!--        <div class="tab-pane fade" id="stop-limit" role="tabpanel" aria-labelledby="stop-limit-tab">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6 class="title"><strong>Buy KOLIN</strong><span class="pull-right">&nbsp; BTC: 3.87062</span></h6>
+                                        <div class="form-group">
+                                            <label for="">Stop</label>
+                                            <input type="number" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Limit</label>
+                                            <input type="number" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Amount</label>
+                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                        </div>
+                                        <div class="form-group percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Total</label>
+                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <a class="btn btn-success">BUY</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6 class="title"><strong>Sell KOLIN</strong><span class="pull-right">&nbsp; BTC: 3.87062</span></h6>
+                                        <div class="form-group">
+                                            <label for="">Stop</label>
+                                            <input type="number" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Limit</label>
+                                            <input type="number" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Amount</label>
+                                            <input type="text" class="form-control" id="" placeholder="KOLIN">
+                                        </div>
+                                        <div class="form-group percent-btns">
+                                            <a href="#">25%</a>
+                                            <a href="#">50%</a>
+                                            <a href="#">75%</a>
+                                            <a href="#">100%</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Total</label>
+                                            <input type="text" class="form-control" id="" placeholder="BTC">
+                                        </div>
+                                        <div class="form-group">
+                                            <a class="btn btn-danger">SELL</a>
+                                        </div>
+                                    </div>
+                                </div></div>-->
+                            
+                        </div>
+                    </div>
+	
+<div class="center-widget">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="buy" aria-selected="true"><img src="img/icons/buy.jpg"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="sell" aria-selected="false"><img src="img/icons/sell.jpg"></a>
+                            </li>
+                           
+    </ul>
+<div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade" id="buy">
+								<div class="table table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Price (BTC)</th>
+                                            <th>Amount (KOLIN)</th>
+                                            <th>Total (BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="buykolin">
+                                    </tbody>
+                                </table>
+								</div>
+                            </div>
+                            <div class="tab-pane fade" id="sell">
+								<div class="table table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Price (BTC)</th>
+                                            <th>Amount (KOLIN)</th>
+                                            <th>Total (BTC)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sellkolin">
+                                    </tbody>
+                                </table>
+								</div>
+                            </div>
+</div>
+	</div>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+         <div class="center-widget">
+                                <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="r-btc-tab" data-toggle="tab" href="#r-btc" role="tab" aria-controls="r-btc" aria-selected="false">Kolin</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent3">
+                                    <div class="tab-pane fade show active" id="r-fav" role="tabpanel" aria-labelledby="r-fav-tab">
+										<div class="table table-responsive">
+                                        <table id="right-data-table" class="table row-border right-data-table table-hover" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th width="120">Pair</th>
+                                                    <th>Price</th>
+                                                    <th>Change</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star1" type="checkbox" name="time" />
+                                                           <!-- <label for="star1"><i class="fas fa-star"></i></label> -->
+                                                            <svg width="12" height="12"><path transform = "scale(0.09)"  d="M45,52.3a3,3,0,0,0,4.93,2.29L96.8,15.24a4,4,0,0,0-.52-6.49A64,64,0,0,0,51.53,1.22,8,8,0,0,0,45,9.08Z" fill="#016699"></path><path transform = "scale(0.09)" fill="#3499cc"  d="M104.51,108.8a4,4,0,0,0,5.43-.25,64,64,0,0,0,0-89.1,4,4,0,0,0-5.43-.25L54.9,60.94a4,4,0,0,0,0,6.12Z"></path><path fill="#016699" transform = "scale(0.09)" d="M37,12.64a4,4,0,0,0-6.08-3.42,64,64,0,0,0,0,109.56A4,4,0,0,0,37,115.36Z"></path><path fill="#016699" transform = "scale(0.09)" d="M45,75.7v43.22a8,8,0,0,0,6.53,7.86,64,64,0,0,0,44.75-7.53,4,4,0,0,0,.52-6.49L49.93,73.41A3,3,0,0,0,45,75.7Z"></path></svg> KOLIN / BTC <svg width="12" height="12">
+															<path fill="#FF9900" transform="scale(0.028)" d="M395.655,249.236c-11.037-14.272-27.692-24.075-49.964-29.403c28.362-14.467,40.826-39.021,37.404-73.666 c-1.144-12.563-4.616-23.451-10.424-32.68c-5.812-9.231-13.655-16.652-23.559-22.266c-9.896-5.621-20.659-9.9-32.264-12.85 c-11.608-2.95-24.935-5.092-39.972-6.423V0h-43.964v69.949c-7.613,0-19.223,0.19-34.829,0.571V0h-43.97v71.948 c-6.283,0.191-15.513,0.288-27.694,0.288l-60.526-0.288v46.824h31.689c14.466,0,22.936,6.473,25.41,19.414v81.942 c1.906,0,3.427,0.098,4.57,0.288h-4.57v114.769c-1.521,9.705-7.04,14.562-16.558,14.562H74.747l-8.852,52.249h57.102 c3.617,0,8.848,0.048,15.703,0.134c6.851,0.096,11.988,0.144,15.415,0.144v72.803h43.977v-71.947 c7.992,0.195,19.602,0.288,34.829,0.288v71.659h43.965v-72.803c15.611-0.76,29.457-2.18,41.538-4.281 c12.087-2.101,23.653-5.379,34.69-9.855c11.036-4.47,20.266-10.041,27.688-16.703c7.426-6.656,13.559-15.13,18.421-25.41 c4.846-10.28,7.943-22.176,9.271-35.693C410.979,283.882,406.694,263.514,395.655,249.236z M198.938,121.904 c1.333,0,5.092-0.048,11.278-0.144c6.189-0.098,11.326-0.192,15.418-0.288c4.093-0.094,9.613,0.144,16.563,0.715 c6.947,0.571,12.799,1.334,17.556,2.284s9.996,2.521,15.701,4.71c5.715,2.187,10.28,4.853,13.702,7.993 c3.429,3.14,6.331,7.139,8.706,11.993c2.382,4.853,3.572,10.42,3.572,16.7c0,5.33-0.855,10.185-2.566,14.565 c-1.708,4.377-4.284,8.042-7.706,10.992c-3.423,2.951-6.951,5.523-10.568,7.71c-3.613,2.187-8.233,3.949-13.846,5.28 c-5.612,1.333-10.513,2.38-14.698,3.14c-4.188,0.762-9.421,1.287-15.703,1.571c-6.283,0.284-11.043,0.478-14.277,0.572 c-3.237,0.094-7.661,0.094-13.278,0c-5.618-0.094-8.897-0.144-9.851-0.144v-87.65H198.938z M318.998,316.331 c-1.813,4.38-4.141,8.189-6.994,11.427c-2.858,3.23-6.619,6.088-11.28,8.559c-4.66,2.478-9.185,4.473-13.559,5.996 c-4.38,1.529-9.664,2.854-15.844,4c-6.194,1.143-11.615,1.947-16.283,2.426c-4.661,0.477-10.226,0.856-16.7,1.144 c-6.469,0.28-11.516,0.425-15.131,0.425c-3.617,0-8.186-0.052-13.706-0.145c-5.523-0.089-9.041-0.137-10.565-0.137v-96.505 c1.521,0,6.042-0.093,13.562-0.287c7.521-0.192,13.656-0.281,18.415-0.281c4.758,0,11.327,0.281,19.705,0.856 c8.37,0.567,15.413,1.42,21.128,2.562c5.708,1.144,11.937,2.902,18.699,5.284c6.755,2.378,12.23,5.28,16.419,8.706 c4.188,3.432,7.707,7.803,10.561,13.134c2.861,5.328,4.288,11.42,4.288,18.274C321.712,307.104,320.809,311.95,318.998,316.331z"></path></svg>
+															
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.00000002</span> </td>
+                                                    <td><span class="text-success">+10.0%</span></td>
+                                                </tr>
+								
+                                                <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star2" type="checkbox" name="time" />
+                                                          <!--  <label for="star1"><i class="fas fa-star"></i></label> -->
+															
+															
+															
+                                                            <svg width="12" height="12"><path transform = "scale(0.09)"  d="M45,52.3a3,3,0,0,0,4.93,2.29L96.8,15.24a4,4,0,0,0-.52-6.49A64,64,0,0,0,51.53,1.22,8,8,0,0,0,45,9.08Z" fill="#016699"></path><path transform = "scale(0.09)" fill="#3499cc"  d="M104.51,108.8a4,4,0,0,0,5.43-.25,64,64,0,0,0,0-89.1,4,4,0,0,0-5.43-.25L54.9,60.94a4,4,0,0,0,0,6.12Z"></path><path fill="#016699" transform = "scale(0.09)" d="M37,12.64a4,4,0,0,0-6.08-3.42,64,64,0,0,0,0,109.56A4,4,0,0,0,37,115.36Z"></path><path fill="#016699" transform = "scale(0.09)" d="M45,75.7v43.22a8,8,0,0,0,6.53,7.86,64,64,0,0,0,44.75-7.53,4,4,0,0,0,.52-6.49L49.93,73.41A3,3,0,0,0,45,75.7Z"></path></svg> KOLIN / ETH <svg width="12" height="12"><path fill="#3c3c3d" transform="scale(0.5)" d="M11.944 17.97L4.58 13.62 11.943 24l7.37-10.38-7.372 4.35h.003zM12.056 0L4.69 12.223l7.365 4.354 7.365-4.35L12.056 0z"/></svg>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">+12.3%</span></td>
+                                                </tr>
+                                              <!--  <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star3" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/XRP
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">+3.87%</span></td>
+                                                </tr> -->
+                                                <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star4" type="checkbox" name="time" />
+                                                           <!-- <label for="star1"><i class="fas fa-star"></i></label> -->
+                                                            <svg width="12" height="12"><path transform = "scale(0.09)"  d="M45,52.3a3,3,0,0,0,4.93,2.29L96.8,15.24a4,4,0,0,0-.52-6.49A64,64,0,0,0,51.53,1.22,8,8,0,0,0,45,9.08Z" fill="#016699"></path><path transform = "scale(0.09)" fill="#3499cc"  d="M104.51,108.8a4,4,0,0,0,5.43-.25,64,64,0,0,0,0-89.1,4,4,0,0,0-5.43-.25L54.9,60.94a4,4,0,0,0,0,6.12Z"></path><path fill="#016699" transform = "scale(0.09)" d="M37,12.64a4,4,0,0,0-6.08-3.42,64,64,0,0,0,0,109.56A4,4,0,0,0,37,115.36Z"></path><path fill="#016699" transform = "scale(0.09)" d="M45,75.7v43.22a8,8,0,0,0,6.53,7.86,64,64,0,0,0,44.75-7.53,4,4,0,0,0,.52-6.49L49.93,73.41A3,3,0,0,0,45,75.7Z"></path></svg> KOLIN / WAVES <svg width="12" height="12"><path fill="blue" d="M12,6,6,12,0,6,6,0Z"></path></svg>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-danger">0.086583</span> </td>
+                                                    <td><span class="text-danger">+1.87%</span></td>
+                                                </tr>
+                                             <!--   <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star5" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/LTC
+                                                        </div>
+                                                    </td> 
+                                                    <td><span class="text-danger">0.086583</span> </td>
+                                                    <td><span class="text-danger">-2.70%</span></td>
+                                                </tr> -->
+                                              <!--  <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star6" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/BCH
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">-1.87</span></td>
+                                                </tr> -->
+                                              <!--  <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star7" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/BSV
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">+18%</span></td>
+                                                </tr> -->
+                                             <!--    <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star8" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/EUR
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">+17%</span></td>
+                                                </tr> -->
+                                               <!--  <tr class="clickable-row" data-href="">
+                                                    <td>
+                                                        <div class="star-inner">
+                                                            <input id="star9" type="checkbox" name="time" />
+                                                            <label for="star1"><i class="fas fa-star"></i></label>
+                                                            KOLIN/USD
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="text-success">0.086583</span> </td>
+                                                    <td><span class="text-success">+17.1%</span></td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+										</div>
+                                </div>
+  </div>
+		<div class="center-widget">
+			<ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="lastTx" data-toggle="tab" href="#r-btc" role="tab"  aria-selected="false">Last transactions</a>
+                                    </li>
+                                </ul>
+			<div class="tab-content">
+				<div class="table table-responsive">
+                    <table class="table">
+						
+                        <thead>
+                           <tr>
+                              <th>Price (BTC)</th>
+                              <th>Amount (KOLIN)</th>
+                              <th>Total (BTC)</th>
+                           </tr>
+                         </thead>
+                         <tbody id="lastTransactions">
+                         </tbody>
+                    </table>
+					
+				</div>
+			</div>
+		</div>
+	 </div>
+</div>
+<!-- Order Widget END -->
+<!-- content-wrapper ends -->
+</div>
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018-2019
+              <a href="http://kolinplatform.com" target="_blank">Kolin Platform</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">The first decentralised network for Translation
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+ <!-- <script src="../../vendors/js/vendor.bundle.addons.js"></script>-->
+  <!-- endinject -->
+  <!-- inject:js -->
+ <!-- <script src="../../js/off-canvas.js"></script> -->
+  <script src="../../js/misc.js"></script>
+  <!-- endinject --> 
+ <!-- <script src="../../js/lasttransactions.js"></script>--> 
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+	<!-- Waveskeeper JS -->
+	<script src="../../js/waveskeeper.js"></script>
+</body>
+	
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kolin Private - Login</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+	
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
+      <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
+        <div class="row w-100">
+          
+            
+            <!--Login with Waveskeeper start-->
+            <div class="col-lg-4 mx-auto my-2">
+            <div class="auto-form-wrapper">    
+                <div class="form-group">
+                    <img src="../../images/waveskeeper.png" class="img-fluid" style="filter: contrast(110%);"/>
+                </div>
+                <div class="text-block text-center my-3">
+                 <p class="text-black text-small"> Keep your Waves keys safe online </p>
+                </div>
+        		<div class="form-group">
+					<!--onClick="check(this.form)-->
+                  <button class="btn btn-primary submit-btn btn-block"  onClick="login()" href="#"> Login with Waves<svg height="12" width="10"><path fill="#fff" d="M8,4,4,8,0,4,4,0Z"></path></svg>keeper  </button>
+                    <div id="auth-result-alert" class="hidden"></div>
+        <div class="p-key hidden"></div>
+        <div class="auth-ok hidden"></div>
+        <div class="auth-not-valid hidden"></div>
+        <div class="auth-rejected hidden"></div>
+        <div class="auth-wait hidden"></div>
+    
+                </div>
+                  <div class="text-block text-center my-3">
+                  <p><span class="text-small font-weight-semibold">Do not have Waves keeper?</span>
+                  extension available for <a href="https://chrome.google.com/webstore/detail/waves-keeper/lpilbniiabackdjcionkobglmddfbcjo" class="text-black text-small font-weight-semibold">Google Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/waves-keeper/" class="text-black text-small font-weight-semibold">Firefox</a> and <a href="https://www.microsoft.com/en-us/p/waves-keeper/9npz1hrq32nt" class="text-black text-small font-weight-semibold">Microsoft Edge.</a></p>
+                </div>
+                <div class="text-block text-center my-3">
+                 <p class="text-gray text-small"> <span class="text-small font-weight-semibold">Waves keeper</span> is the safest way to inhteract with third-party web resources with Waves integrated functionality or DApps. Using Waves keeper, you can sign transactions and remain safe from malicious sites</p>
+                  
+                </div>
+            </div>
+            
+          </div>
+            <!--Login with Waveskeeper end-->
+            
+             <!-- Standard Login start-->
+            <!-- <div class="col-lg-4 mx-auto my-2">
+            <div class="auto-form-wrapper">
+              <form action="#">
+                <div class="form-group">
+                  <label class="label">Username</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="userid" placeholder="Username">
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="label">Password</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" name="pswrd" placeholder="*********">
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-info submit-btn btn-block"  onClick="check(this.form)" href="#">Login</button>
+                </div>
+				  
+                <div class="form-group d-flex justify-content-between">
+                  <div class="form-check form-check-flat mt-0">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" checked> Keep me signed in
+                    </label>
+                  </div>
+                  <a href="#" class="text-small forgot-password text-black">Forgot Password</a>
+                </div>
+                
+                <div class="text-block text-center my-3">
+                  <span class="text-small font-weight-semibold">Not a member ?</span>
+                  <a href="register.html" class="text-black text-small">Create new account</a>
+                </div>
+              </form>
+		
+            </div>
+       
+          </div> -->
+            <!-- Standard Login end-->
+            <div class="col-lg-12 mx-auto"> <ul class="auth-footer">
+              <li>
+                <a href="#" class="text-white">Conditions</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Help</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Terms</a>
+              </li>
+            </ul>
+            <p class="footer-text text-center text-white">Copyright © 2018 - 2019 Kolin Private. All rights reserved.</p></div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+	
+	<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "userid" && form.pswrd.value == "pswrd")
+  {
+    window.open('../../../index.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+
+ <!-- plugins:js -->
+   <!--<script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>-->
+  <!-- endinject -->
+  <!-- inject:js -->
+  <!--<script src="../../js/off-canvas.js"></script>
+  <script src="../../js/misc.js"></script>-->
+  <!-- endinject -->
+	<!-- Waveskeeper js for this page-->
+<script src="../../js/waveskeeper.js"></script>
+</body>
+
+</html>
