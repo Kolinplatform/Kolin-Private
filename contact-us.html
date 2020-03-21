@@ -14,11 +14,67 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300%7CRoboto:400,100,300,700" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="css/style.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="trd-contact-template">
         <header class="trd-header trd-transparent-header trd-fixed-header">
-            <!-- Bottombar -->
+             <!-- Topbar -->
+            <div class="trd-header-topbar">
+                <div class="container">
+                    <div class="row">
+                        <!-- contact info -->
+                        <div class="trd-contact-infos">
+                            <ul>
+                                <li class="trd-header-info-location">101 Rose St S Ln, Edinburgh, UK</li>
+                                <li class="trd-header-info-lang">
+                                    <select class="trd-multilang-opt">
+                                        <option value="Eng">English</option>
+                                        <option value="Spn">Spanish</option>
+                                        <option value="Chn">Chinese</option>
+                                        <option value="Rus">Russian</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Social Links -->
+                        <div class="trd-social-links">
+                            <ul>
+                                <li class="trd-fb-icon">
+                                    <a href="https://www.facebook.com/kolinplatform.official/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="trd-twitter-icon">
+                                    <a href="https://twitter.com/KolinPlatform">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="trd-telegram-icon">
+                                    <a href="https://t.me/Kolin_official">
+                                        <i class="fa fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="trd-youtube-icon">
+                                    <a href="https://www.youtube.com/channel/UCSEaMfb7EXUM7n4-HwnycRg">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li class="trd-instagram-icon">
+                                    <a href="https://www.instagram.com/kolinplatform">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+			<!-- Bottombar -->
             <div class="trd-header-bottombar">
                 <!-- Navigation Menu start-->
                 <nav class="navbar trd-main-menu" role="navigation">
@@ -33,7 +89,7 @@
                           </button>
 
                           <!-- Logo -->
-                          <a class="navbar-brand" href="#"><img class="logo" src="images/kolin_white text.png" style="height: 40px" alt="Kolin"></a>
+                          <a class="navbar-brand hidden" href="#"><img class="logo" src="images/kolin_white text.png" style="height: 40px" alt="Kolin"></a>
                       </div>
                       <!-- Navbar Toggle End -->
 
@@ -43,18 +99,13 @@
                             <ul class="nav navbar-nav trd-menus">
                                 <li class="active">
                                     <a href="https://private.kolinplatform.com">Home</a>
-                                    <ul class="trd-dropdown-menu">
-                                       
-                                        <li>
-                                            <a href="#">This is a preview and all links are locked</a>
-                                        </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li>
                                     <a href="/about-us.html">About</a>
                                 </li>
                                 <li>
-                                    <a href="/blog.html">Blog</a>
+                                    <a href="https://medium.com/@KolinPlatform">Blog</a>
                                     
                                 </li>
                                 <li>
@@ -167,40 +218,6 @@
                             </div>
                             <!-- END -->
 
-                            <!-- ADDRESSES -->
-                            <div class="trd-office-address">
-                                <h3 class="trd-office-title">Dublin</h3>
-                                <ul>
-                                    <li class="trd-office-location">45 Dawson Street, Dublin, UK</li>
-                                    <li class="trd-office-phone"></li>
-                                    <li class="trd-office-email">contact@kolinplatform.com</li>
-                                </ul>
-                            </div>
-                            <!-- END -->
-                        </div>
-
-                        <div class="trd-column col-md-6 col-sm-6 col-xs-12">
-                            <!-- ADDRESSES -->
-                            <div class="trd-office-address">
-                                <h3 class="trd-office-title">London</h3>
-                                <ul>
-                                    <li class="trd-office-location">40 Bloomsbury Way, London, UK</li>
-                                    <li class="trd-office-phone"></li>
-                                    <li class="trd-office-email">contact@kolinplatform.com</li>
-                                </ul>
-                            </div>
-                            <!-- END -->
-
-                            <!-- ADDRESSES -->
-                            <div class="trd-office">
-                                <h3 class="trd-office-title">New York</h3>
-                                <ul>
-                                    <li class="trd-office-location">228 Park Ave S, New York, USA</li>
-                                    <li class="trd-office-phone"></li>
-                                    <li class="trd-office-email">contact@kolinplatform.com</li>
-                                </ul>
-                            </div>
-                            <!-- END -->
                         </div>
                     </div>
                     <!-- End -->
@@ -227,7 +244,7 @@
                         <!-- End -->
 
                         <!-- Useful Link Widget -->
-                        <div class="col-md-3 col-sm-6 col-xs-12 trd-footer-widget trd-useful-link-widget">
+                        <div class="col-md-3 col-sm-6 col-xs-6 trd-footer-widget trd-useful-link-widget">
                             <h3 class="trd-footer-widget-title">Useful Link</h3>
 
                             <div class="trd-footer-widget-content">
@@ -296,8 +313,7 @@
                                 <p>Enjoy to be part of the largest decentralised international collaboration network</p>
 
                                 <form action="https://kolinplatform.us7.list-manage.com/subscribe/post?u=920c368808e84a277fedafa9a&amp;id=5040bc01e2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-									 
-                                    <input type="email" id="trd-subscription" placeholder="Your email" value="" name="EMAIL" required>
+									 <input type="email" id="trd-subscription" placeholder="Your email" value="" name="EMAIL" required>
 									<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
@@ -323,7 +339,7 @@
                                     <a href="/about-us.html">About</a>
                                 </li>
                                 <li>
-                                    <a href="/blog.html">Blog</a>
+                                    <a href="https://medium.com/@KolinPlatform">Blog</a>
                                 </li>
                                 <li>
                                     <a href="/contact-us.html">Contact</a>
@@ -332,7 +348,7 @@
                         </div>
 
                         <div class="trd-copyright-info">
-                            <p>Copyright &copy; 2018  <a href="https://kolinplatform.com" class="trd-author-link">Kolin Platform</a>, all right reserved</p>
+                            <p>Copyright &copy; 2018-2019  <a href="https://kolinplatform.com" class="trd-author-link">Kolin Platform</a>, all right reserved</p>
                         </div>
                     </div>
                     <!-- End -->
